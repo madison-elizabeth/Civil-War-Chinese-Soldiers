@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Chinese Soldiers in the American Civil War"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Webpages/about.qmd
+        text: About
+      - href: Webpages/methodology.qmd
+        text: Methodology:Building the Database
+      - href: Webpages/sources.qmd
+        text: Sources
+      - text: Themes
+        menu:
+          - href: Webpages/themes/theme1.qmd
+            text: Fighting for Belonging
+          - href: Webpages/themes/theme2.qmd
+            text: Race and Recognition
+          - href: Webpages/themes/theme3.qmd
+            text: After the War
+          - href: Webpages/themes/theme4.qmd
+            text: American Perceptions of Immigrants
+      - text: Soldier Profiles
+        menu:
+          - href: Webpages/Soldier_Profiles/robert-spicer.qmd
+            text: Robert Spicer
+          - href: Webpages/Soldier_Profiles/john-hang.qmd
+            text: John Hang
+      - href: Webpages/Mapping the Journey/mapping.qmd
+        text: Mapping the Journey
+  
+
+format:
+  html:
+    theme:
+      - lux
+      - brand
+    css: styles.css
+    toc: true
+    
+
+editor: visual
+
