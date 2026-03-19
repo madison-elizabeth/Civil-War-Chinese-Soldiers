@@ -1,0 +1,235 @@
+
+---
+title: "Tracing Civil War Journeys"
+format:
+  html:
+    toc: false
+    code-fold: false
+    page-layout: full
+    theme: cosmo
+    css: styles.css
+    smooth-scroll: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(dplyr)
+library(readr)
+library(stringr)
+library(tidyr)
+library(tibble)
+library(leaflet)
+library(htmltools)
+library(sf)
+library(purrr)
+library(tidygeocoder)
+```
+
+## About this project
+
+::: {.callout-note appearance="simple"}
+This interactive map traces documented and approximate journey stops for soldiers and sailors in the dataset. It is designed as a public-facing research tool: readers can explore movement across enlistment points, transfers, receiving ships, discharge locations, and other recorded stops.
+:::
+
+This first version of the map emphasizes **documented locations** and **carefully standardized place names** rather than speculative routes. Lines connect each person's stops in order using `stop_order`.
+
+### How to read the map
+
+-   **Lines** trace each recorded journey in sequence.
+-   **Point colors** distinguish exact, approximate, and uncertain locations.
+-   **Line colors** distinguish Army and Navy records.
+-   Clicking a point opens source-based details for that stop.
+
+```{r}
+#| label: load-data
+stops_raw <- read_csv("data/journey_stops_mapping_ready.csv", show_col_types = FALSE)
+
+stops <- stops_raw %>%
+  mutate(
+    place_standardized = na_if(str_squish(place_standardized), ""),
+    place_label = na_if(str_squish(place_label), ""),
+    stop_date = na_if(as.character(stop_date), ""),
+    certainty = coalesce(certainty, "unknown"),
+    service_branch = coalesce(service_branch, "Unknown")
+  ) %>%
+  filter(!is.na(place_standardized))
+```
+
+## Geocode places once and cache them
+
+This chunk geocodes only places that do not already have latitude and longitude. It saves a reusable lookup table so you do not have to geocode everything every time you render.
+
+```{r}
+#| label: geocode-cache
+#| eval: true
+geocode_cache_path <- "data/geocoded_places.csv"
+
+if (file.exists(geocode_cache_path)) {
+  geocode_cache <- read_csv(geocode_cache_path, show_col_types = FALSE)
+} else {
+  geocode_cache <- tibble(
+    place_standardized = character(),
+    lat = numeric(),
+    lon = numeric()
+  )
+}
+
+places_needed <- stops %>%
+  distinct(place_standardized) %>%
+  anti_join(geocode_cache, by = "place_standardized")
+
+if (nrow(places_needed) > 0) {
+  new_geocodes <- places_needed %>%
+    geocode(
+      address = place_standardized,
+      method = "osm",
+      lat = lat,
+      long = lon,
+      limit = 1
+    ) %>%
+    select(place_standardized, lat, lon)
+
+  geocode_cache <- bind_rows(geocode_cache, new_geocodes) %>%
+    distinct(place_standardized, .keep_all = TRUE)
+
+  write_csv(geocode_cache, geocode_cache_path)
+}
+
+stops_geo <- stops %>%
+  select(-lat, -lon) %>%
+  left_join(geocode_cache, by = "place_standardized")
+```
+
+```{r}
+#| label: prepare-map-data
+stops_map <- stops_geo %>%
+  filter(!is.na(lat), !is.na(lon)) %>%
+  arrange(name, stop_order) %>%
+  mutate(
+    popup = pmap_chr(
+      list(name, service_branch, stop_type, stop_date, place_label, place_standardized, certainty, notes_for_mapping),
+      ~ as.character(tagList(
+        tags$b(..1), tags$br(),
+        tags$strong("Branch: "), ..2, tags$br(),
+        tags$strong("Stop type: "), ..3, tags$br(),
+        tags$strong("Date: "), ifelse(is.na(..4), "Unknown", ..4), tags$br(),
+        tags$strong("Original place: "), ifelse(is.na(..5), "Unknown", ..5), tags$br(),
+        tags$strong("Mapped place: "), ifelse(is.na(..6), "Unknown", ..6), tags$br(),
+        tags$strong("Certainty: "), ..7, tags$br(),
+        tags$strong("Notes: "), ifelse(is.na(..8), "", ..8)
+      ))
+    )
+  )
+
+segments <- stops_map %>%
+  group_by(name) %>%
+  arrange(stop_order, .by_group = TRUE) %>%
+  mutate(
+    next_lat = lead(lat),
+    next_lon = lead(lon),
+    next_place = lead(place_standardized),
+    next_stop_order = lead(stop_order)
+  ) %>%
+  ungroup() %>%
+  filter(!is.na(next_lat), !is.na(next_lon))
+
+segments_sf <- pmap_dfr(
+  list(segments$lon, segments$lat, segments$next_lon, segments$next_lat,
+       segments$name, segments$service_branch, segments$place_standardized, segments$next_place),
+  function(lon, lat, next_lon, next_lat, name, service_branch, place_standardized, next_place) {
+    tibble(
+      name = name,
+      service_branch = service_branch,
+      place_standardized = place_standardized,
+      next_place = next_place,
+      geometry = st_sfc(
+        st_linestring(matrix(c(lon, lat, next_lon, next_lat), ncol = 2, byrow = TRUE)),
+        crs = 4326
+      )
+    )
+  }
+) %>%
+  st_as_sf()
+
+branch_pal <- colorFactor(
+  palette = c("Army" = "#8c510a", "Navy" = "#01665e", "Unknown" = "#5e3c99"),
+  domain = unique(stops_map$service_branch)
+)
+
+certainty_pal <- colorFactor(
+  palette = c("exact" = "#1b9e77", "approximate" = "#d95f02", "unknown" = "#7570b3"),
+  domain = unique(stops_map$certainty)
+)
+```
+
+## Explore the map
+
+Use the interactive controls to zoom, pan, and compare Army and Navy journeys. You can turn stops and journey lines on or off in the layer panel.
+
+```{r}
+#| label: leaflet-map
+
+# Create slightly offset coordinates only where points overlap
+stops_map_jittered <- stops_map %>%
+  group_by(lon, lat) %>%
+  mutate(
+    n_at_location = n(),
+    row_id_at_location = row_number(),
+    angle = ifelse(n_at_location == 1, 0, 2 * pi * (row_id_at_location - 1) / n_at_location),
+    offset = ifelse(n_at_location == 1, 0, 0.18),
+    lon_jitter = lon + offset * cos(angle),
+    lat_jitter = lat + offset * sin(angle)
+  ) %>%
+  ungroup()
+
+leaflet() %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  addPolylines(
+    data = segments_sf,
+    color = ~branch_pal(service_branch),
+    weight = 2.5,
+    opacity = 0.7,
+    group = "Journeys",
+    popup = ~paste0(
+      "<b>", name, "</b><br>",
+      "From: ", place_standardized, "<br>",
+      "To: ", next_place
+    )
+  ) %>%
+  addCircleMarkers(
+    data = stops_map_jittered,
+    lng = ~lon_jitter,
+    lat = ~lat_jitter,
+    radius = 6,
+    stroke = TRUE,
+    weight = 1,
+    color = ~certainty_pal(certainty),
+    fillColor = ~certainty_pal(certainty),
+    fillOpacity = 0.9,
+    popup = ~popup,
+    group = "Stops",
+    label = ~paste(name, "-", stop_type)
+  ) %>%
+  addLegend(
+    position = "bottomright",
+    pal = branch_pal,
+    values = stops_map$service_branch,
+    title = "Service Branch",
+    opacity = 1
+  ) %>%
+  addLegend(
+    position = "bottomleft",
+    pal = certainty_pal,
+    values = stops_map$certainty,
+    title = "Location Certainty",
+    opacity = 1
+  ) %>%
+  addLayersControl(
+    overlayGroups = c("Journeys", "Stops"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+```

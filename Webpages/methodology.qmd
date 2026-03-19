@@ -1,0 +1,22 @@
+---
+title: "methodology"
+format: html
+---
+
+## Building the Database
+
+*Reconstructing a Hidden Archive*
+
+How many Chinese immigrants served in the American Civil War, and what can we learn about their lives?
+
+Attempting to answer that question required building a research database that brings together scattered historical records from multiple archives and digital collections. Because Chinese soldiers were rarely documented in a consistent way, their stories often appear only in fragments across different sources. The database was created first to help myself organize the material, and now as a way to make them easier to analyze and share.
+
+*Identifying the Soldiers*
+
+The first step in building the database was identifying potential Chinese soldiers in Civil War records. Fortunately, the American Battlefield Trust and the National Park Service in 2015 released a pamphlet about Asian participation in the war. In this pamphlet were lists of soldiers by name, and it was here that I began my research. After narrowing down my target list to researching Chinese soldiers serving in both the Union and the Navy, I began my work.
+
+Each soldier was cross-checked across multiple sources to confirm their identity wherever possible–Fold3, National Archives Catalog, Ancestry, FamilySearch, and FindAGrave. Nineteenth-century records were inconsistent, and identifying individuals usually required comparing spelling variations and alternate names. If I came across a record that sounded similar to the name I was looking to confirm, I made a note of it as a possibility. A single soldier might appear under various spellings depending on the official recording his information. Once I located the soldier, I used the information I found to begin searching for any mention of them in newspapers and printed media. One soldier could take hours.
+
+\
+
+\
