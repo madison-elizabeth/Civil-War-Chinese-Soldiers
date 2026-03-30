@@ -11,7 +11,7 @@ website:
       - href: Webpages/about.qmd
         text: About
       - href: Webpages/methodology.qmd
-        text: Methodology:Building the Database
+        text: Methodology
       - href: Webpages/sources.qmd
         text: Sources
       - text: Themes
@@ -30,6 +30,8 @@ website:
             text: Robert Spicer
           - href: Webpages/soldier_profiles/john-hang.qmd
             text: John Hang
+          - href: Webpages/soldier_profiles/john-comfort.qmd
+            text: John Comfort
       - href: Webpages/mapping_the_journey/mapping.qmd
         text: Mapping the Journey
   
