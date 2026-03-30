@@ -27,17 +27,21 @@ format: html
 
 <p>John Comfort enlisted in the Union Navy on September 27, 1864, at the age of nineteen. He served for two years before being discharged on October 26, 1866. Records show that he served as a landsman aboard the U.S.S. <em>North Carolina</em>, the U.S.S. <em>Seneca</em>, and the U.S.S. <em>Constellation</em>.</p>
 
-<p>Although the exact dates of his transfers between ships remain unclear, the histories of these vessels help place his service in context.
+<p>
+
+Although the exact dates of his transfers between ships remain unclear, the histories of these vessels help place his service in context.
 
 ![U.S.S. *North Carolina*](images/1820USS_NorthCarolina-01.jpg)
 
-By the time Comfort served aboard the U.S.S. <em>North Carolina</em>, the ship was functioning as a receiving ship rather than an active war vessel, suggesting that it may have served as an entry point in his naval experience.</p>
+By the time Comfort served aboard the U.S.S. <em>North Carolina</em>, the ship was functioning as a receiving ship rather than an active war vessel, suggesting that it may have served as an entry point in his naval experience.
 
-![The U.S.S. *Seneca*](images/Seneca.jpg){alt="The U.S.S. Seneca"}
+</p>
+
+![The U.S.S. Seneca](images/Seneca.jpg)
 
 <p>The U.S.S. <em>Seneca</em>, a wooden-hulled gunboat launched in 1861, served with the North Atlantic Blockading Squadron. During the period of Comfort’s service, the <em>Seneca</em> participated in major operations against Fort Fisher in late 1864 and early 1865, and later helped in the attack and capture of Fort Anderson in February 1865. If Comfort was aboard during this period, he would have been connected to some of the Navy’s important late-war campaigns along the Atlantic coast.</p>
 
-![The U.S.S. *Constellation*](images/constellation.jpg){alt="The U.S.S. Constellation"}
+![The U.S.S. Constellation](images/constellation.jpg)
 
 <p>Comfort also served aboard the U.S.S. <em>Constellation</em>, the last all-sail ship built by the United States Navy. Commissioned in 1855, the <em>Constellation</em> had already established a long service history by the time Comfort joined its crew. The ship is remembered both for its Civil War-era service and for its earlier role in suppressing the foreign slave trade.</p>
 
@@ -45,7 +49,9 @@ By the time Comfort served aboard the U.S.S. <em>North Carolina</em>, the ship w
 
 <h2>Postwar Life</h2>
 
-<p><p>After the war, Comfort’s life appears to have taken him across the Pacific world. He married Au Kung Ling in Hong Kong in 1878. By 1895, he was living in New York City, suggesting that he had returned to the United States by the late nineteenth century. Together, John and Au Kung Ling had a daughter, Tai Kau, who was born on July 27, 1899. Comfort died on April 6, 1907.</p>
+<p>
+
+<p>After the war, Comfort’s life appears to have taken him across the Pacific world. He married Au Kung Ling in Hong Kong in 1878. By 1895, he was living in New York City, suggesting that he had returned to the United States by the late nineteenth century. Together, John and Au Kung Ling had a daughter, Tai Kau, who was born on July 27, 1899. Comfort died on April 6, 1907.</p>
 
 <h2>Historical Significance</h2>
 
