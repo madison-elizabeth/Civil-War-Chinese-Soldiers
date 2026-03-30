@@ -2,4 +2,3 @@
 title: "Soldiers"
 format: html
 ---
-

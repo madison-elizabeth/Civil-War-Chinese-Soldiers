@@ -1,1 +1,22 @@
 /* css styles */
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  margin-top: 1.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+}

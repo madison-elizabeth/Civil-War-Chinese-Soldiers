@@ -3,24 +3,77 @@ title: "Robert Spicer"
 format: html
 ---
 
-Robert Spicer: A Sailor from Shanghai https://www.findagrave.com/memorial/116775306/robert-spicer/photo
+![Robert Spicer, date unknown.](images/spicer_photo.jpeg){fig-align="center"}
 
-Robert Spicer’s journey to the American Civil War began far from the battlefields of the United States. Born in Shanghai, China, in 1842, Spicer eventually found himself serving in the Union Navy during the Civil War. He enlisted on July 21, 1862 in New London, Connecticut as a landsman aboard the USS Sabine, a Union vessel, and was discharged on July 19th, 1863. His experience reflects a broader theme explored in this project: how immigrants and minority soldiers used military service to claim recognition in a nation that often viewed them as outsiders. U.S.S. Sabine, unknown date Unlike many participants who served in army regiments, Spicer fought at sea.
+<h2>Basic Information</h2>
 
-While historians often focus on immigrant regiments in the Union army, men like Spicer entered the conflict through the Union Navy. For sailors living in port towns, naval service was like a natural extension of their existing work. However, landsmen were among the lowest-ranking sailors in the navy, often young men with little previous maritime experience who were learning the demands of naval service during wartime.
+<ul>
 
-\
-Census records and print media reveal elements of Spicer’s life before and after the war. Newspaper accounts reported that he was brought to the United States in 1856 as a child by the wealthy sea-captain, Elihu Spicer, who purchased the boy from his parents in China for eight dollars. While the exact circumstances of this transaction remain difficult to verify, such arrangements were not uncommon in port communities like Mystic and New London, where sailors, merchants, and laborers regularly moved between Asia and the United States. Unfortunately, Spicer’s original Chinese name has been lost, but records show that he did adopt Capt. Spicer’s surname, and took “Robert” for his first. It was likely this coastal connection, as well as the fact that Captain Spicer himself became the captain of a Union steamship, that made enlistment in the Navy more accessible for him.
+<li>Born: Shanghai, 1842</li>
 
-The 1860 census listed him as a seventeen-year-old laborer, showing that he began working before the outbreak of the conflict. After his service, Spicer remained in Connecticut and continued working along the coast. On July 16, 1875, he married Alice Somers at St. Mark’s Church. An 1880 census lists his occupation as a fisherman, reflecting a life tied closely to maritime labor. Spicer also sought payment and recognition for his service, as in 1889, he applied for and received a federal pension. These pensions were benefits for aging veterans that provided financial support.
+<li>Service: Union Navy</li>
+
+<li>Enlisted: July 21, 1862</li>
+
+<li>Discharged: July 19, 1863</li>
+
+</ul>
+
+<h2>Early Life</h2>
+
+<p>
+
+Robert Spicer was born in Shanghai, China, in 1842.
+
+Newspaper accounts reported that he was brought to the United States in 1856 as a child by the wealthy sea-captain, Elihu Spicer, who purchased the boy from his parents in China for eight dollars. While the exact circumstances of this transaction remain difficult to verify, such arrangements were not uncommon in port communities like Mystic and New London, where sailors, merchants, and laborers regularly moved between Asia and the United States. Unfortunately, Spicer’s original Chinese name has been lost, but records show that he did adopt Capt. Spicer’s surname, and took “Robert” for his first. It was likely this coastal connection, as well as the fact that Captain Spicer himself became the captain of a Union steamship, that made enlistment in the Navy more accessible for him.
+
+The 1860 census listed him as a seventeen-year-old laborer, showing that he began working before the outbreak of the conflict.
+
+</p>
+
+<h2>Military Service</h2>
+
+<p>Spicer eventually found himself serving in the Union Navy during the Civil War. He enlisted on July 21, 1862 in New London, Connecticut as a landsman aboard the USS Sabine, a Union vessel, and was discharged on July 19th, 1863.</p>
+
+![U.S.S. Sabine](images/spicer_sabine.jpeg){fig-align="center"}
+
+<h2>Postwar Life</h2>
+
+<p>
+
+After his service, Spicer remained in Connecticut and continued working along the coast. On July 16, 1875, he married Alice Somers at St. Mark’s Church. An 1880 census lists his occupation as a fisherman, reflecting a life tied closely to maritime labor. Spicer also sought payment and recognition for his service, as in 1889, he applied for and received a federal pension.
 
 According to a certificate later filed by his wife, he suffered for years from chronic illness, including fever, “ague”, and persistent diarrhea that she believed was brought on by his service. The couple lived in the coastal community of Noank, Connecticut for the remainder of their lives.
 
 Alice Somers was born in 1850 in Ireland, and immigrated to the United States with her family when she was four years old. The couple did not have any children. Robert Spicer died on March 26, 1900, and newspapers remembered him as a well-known figure– nicknamed “Bob”– in the community and a respected veteran. His funeral was attended by the Grand Army of the Republic, the nation’s largest Union veteran’s association, of which Spicer was also a member. He is buried in Noank Cemetery. His wife, Alice Somers Spicer, would join him in his rest on February 24th, 1915.
 
-Historical Interpretation
+![Spicer's Grave](images/spicer_grave.jpeg){fig-align="center"}
 
-Newspaper accounts describing Spicer reveal how racial identity shaped American public perceptions of immigrant veterans. One obituary referred to him as a “naturalized Chinaman”, while another incorrectly described him as being of Japanese descent. These two descriptions alone demonstrate the uncertainty that surrounded immigrants in nineteenth-century America. Even when discussing individuals like Spicer who lived in the United States for decades, journalists still frequently emphasized their racial identity. However, the same articles also remembered Spicer as a respected member of the community, and all fondly noted his nickname–”Bob.” He was described as being well-liked in fishing circles and honored by the Grand Army of the Republic. This recognition suggests that military service was still able to provide immigrants with some degree of legitimacy, even when the society around them viewed them as perpetual outsiders. Through the limited documents we have, Spicer’s story can still be constructed to a fascinating degree. His life reflects the multi-facted realities faced by many immigrant veterans, and illustrates how global migration, wartime service, and local community intersected in the decades following the Civil War.
+</p>
+
+<h2>Historical Significance</h2>
+
+<p>
+
+Newspaper accounts describing Spicer reveal how racial identity shaped American public perceptions of immigrant veterans. One obituary referred to him as a “naturalized Chinaman”, while another incorrectly described him as being of Japanese descent. These two descriptions alone demonstrate the uncertainty that surrounded immigrants in nineteenth-century America.
+
+Even when discussing individuals like Spicer who lived in the United States for decades, journalists still frequently emphasized their racial identity. However, the same articles also remembered Spicer as a respected member of the community, and all fondly noted his nickname–”Bob.” He was described as being well-liked in fishing circles and honored by the Grand Army of the Republic. This recognition suggests that military service was still able to provide immigrants with some degree of legitimacy, even when the society around them viewed them as perpetual outsiders.
+
+Through the limited documents we have, Spicer’s story can still be constructed to a fascinating degree. His life reflects the multi-facted realities faced by many immigrant veterans, and illustrates how global migration, wartime service, and local community intersected in the decades following the Civil War.
+
+</p>
+
+<h2>Sources</h2>
+
+<ul>
+
+<li><a href="SOURCE LINK">Naval enlistment record</a></li>
+
+<li><a href="SOURCE LINK">Pension record</a></li>
+
+<li><a href="SOURCE LINK">Newspaper article</a></li>
+
+</ul>
 
 Newspaper references
 

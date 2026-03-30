@@ -1,5 +1,9 @@
 ---
-title: "Chinese Soldiers in the American Civil War"
+title: "Chinese Soldiers and Sailors in the American Civil War"
 ---
 
-Under Construction!
+<p>This project recovers the lives of Chinese men who served in the American Civil War, tracing their military service, migration, and postwar experiences through fragmentary archival records. By combining soldier profiles, thematic essays, and mapping, the site asks what military service meant for men navigating race, citizenship, and belonging in nineteenth-century America.</p>
+
+<p>Visitors can explore soldier profiles, thematic essays, historical maps, and research methodology to better understand both the men themselves and the archival challenges involved in reconstructing their lives.</p>
+
+<p>This project builds on work preserved by the <a href="https://www.nps.gov/" target="_blank">National Park Service</a> and other archival institutions.</p>
