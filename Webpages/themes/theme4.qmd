@@ -9,6 +9,8 @@ format: html
 
 <p>In the mid-nineteenth century, Chinese immigrants were often depicted through a limited set of racialized stereotypes. Newspapers, political rhetoric, and popular writing frequently portrayed Chinese individuals as foreign, unassimilable, or morally suspect. These representations shaped how Americans understood Chinese presence, even in places where direct interaction was limited.</p>
 
+[!["Chinaman's Oath." Milwaukee Daily Sentinel, January 15, 1859. Nineteenth Century U.S. Newspapers](images/chinamansoath.png){fig-align="center" width="415"}](https://link-gale-com.ezproxy.lib.vt.edu/apps/doc/GT3010870388/NCNP?u=viva_vpi&sid=bookmark-NCNP&pg=1&xid=385555e2)
+
 <p>Such perceptions were not uniform, but they established a framework within which Chinese men were evaluated. Ideas about labor, gender roles, and cultural difference influenced how Chinese immigrants were viewed and how their actions were interpreted by broader society.</p>
 
 <h2>Perception and Military Service</h2>
@@ -20,6 +22,8 @@ format: html
 <h2>Perception and Its Consequences</h2>
 
 <p>Public perceptions had tangible effects on the lives of Chinese immigrants. Racialized assumptions influenced not only social attitudes but also legal and institutional responses, shaping the boundaries of inclusion and exclusion in American society. These perceptions contributed to the conditions under which Chinese men served, worked, and attempted to build lives in the United States.</p>
+
+[!["Printers Refusing to Work with a Chinaman." Daily Evening Bulletin, August 5, 1861. Nineteenth Century U.S. Newspapers](images/printers-china.png){fig-align="center"}](https://link-gale-com.ezproxy.lib.vt.edu/apps/doc/GT3000054712/NCNP?u=viva_vpi&sid=bookmark-NCNP&pg=2&xid=623cd8a2)
 
 <p>At the same time, the presence of Chinese soldiers complicates these narratives. Their participation in the Civil War demonstrates that, despite prevailing stereotypes, Chinese men were actively engaged in the political and military life of the nation.</p>
 
