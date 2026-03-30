@@ -1,49 +1,42 @@
 ---
-title: "methodology"
+title: "Building the Database"
 format: html
 ---
 
-## Building the Database
+<h1>Methodology</h1>
 
-*Reconstructing a Hidden Archive*
+<p>This project reconstructs the lives of Chinese men who served in the American Civil War by tracing their presence across a fragmented and uneven archival record. Rather than relying on a single source base, it brings together military records, census data, pension files, newspapers, and genealogical databases to identify individuals and follow them across time.</p>
 
-How many Chinese immigrants served in the American Civil War, and what can we learn about their lives?
+<h2>Reconstructing a Fragmented Archive</h2>
 
-Attempting to answer that question required building a research database that brings together scattered historical records from multiple archives and digital collections. Because Chinese soldiers were rarely documented in a consistent way, their stories often appear only in fragments across different sources. The database was created first to help myself organize the material, and now as a way to make them easier to analyze and share.
+<p>Chinese individuals in the nineteenth-century United States often appear only intermittently in official records. Their lives are preserved not in continuous narratives, but in scattered references across different types of documents. As a result, reconstructing these histories requires working across gaps, inconsistencies, and absences in the archive.</p>
 
-*Identifying the Soldiers*
+<p>This project treats fragmentation not simply as a limitation, but as a central feature of the historical record. The difficulty of tracing these men reflects the broader conditions under which Chinese lives were documented, categorized, and often marginalized in nineteenth-century American institutions.</p>
 
-The first step in building the database was identifying potential Chinese soldiers in Civil War records. Fortunately, the American Battlefield Trust and the National Park Service in 2015 released a pamphlet about Asian participation in the war. In this pamphlet were lists of soldiers by name, and it was here that I began my research. After narrowing down my target list to researching Chinese soldiers serving in both the Union and the Navy, I began my work.
+<h2>Identifying the Soldiers</h2>
 
-<p>
-To identify individual soldiers, I cross-referenced records from
-<a href="https://www.fold3.com/" target="_blank">Fold3</a>,
-the <a href="https://catalog.archives.gov/" target="_blank">National Archives Catalog</a>,
-<a href="https://www.familysearch.org/" target="_blank">FamilySearch</a>,
-and other digital and archival collections.
-</p>
+<p>The first step in building this project involved identifying Chinese or Chinese-born individuals within Civil War military and naval records. This process began with enlistment records, particularly naval rendezvous records and service registers, which provided names, ages, places of birth, and dates of service.</p>
 
+<p>From these initial entries, individuals were traced across additional sources, including federal census schedules, pension files, newspaper articles, and genealogical databases such as <a href="https://www.familysearch.org/" target="_blank">FamilySearch</a>, <a href="https://www.ancestry.com/" target="_blank">Ancestry</a>, and <a href="https://www.findagrave.com/" target="_blank">FindAGrave</a>. Digital collections such as <a href="https://catalog.archives.gov/" target="_blank">the National Archives Catalog</a> and <a href="https://www.fold3.com/" target="_blank">Fold3</a> were also central to this process.</p>
 
-<p>
-Identifying the soldiers required tracing individuals across multiple record types,
-including enlistment registers, census schedules, pension files, ship records, cemetery records,
-and newspapers. In many cases, the same individual appeared under multiple spellings or different names,
-which made direct identification difficult.
-</p>
+<h2>Cross-Referencing Records</h2>
 
-<p>
-For example, one soldier might appear in a naval enlistment record under one spelling of his surname,
-in a census under another, and in a pension index under a partially Anglicized version of his name.
-<p>
+<p>Because no single record provides a complete account of an individual’s life, this project relies on cross-referencing multiple sources to confirm identities and reconstruct life histories. A single individual might appear under slightly different names or spellings in different records, requiring comparison across age, birthplace, service history, occupation, and family connections.</p>
 
-(picture here demonstrating the difference in names)
+<p>For example, a naval enlistment record might provide a name, age, and place of birth, while a later census record offers information about residence, occupation, and household structure. Pension files and newspaper coverage can further extend these narratives, providing evidence of postwar life, health, and social connections.</p>
 
-Matching these records required comparing age, place of birth, service details, residence, and family connections
-rather than relying on a single spelling alone.
-</p> 
+<p>This method allows for the reconstruction of individual lives even when no single source contains a complete account. Instead, meaning emerges through the accumulation and alignment of multiple partial records.</p>
 
-With this method, identifying one soldier could take hours.
+<h2>Limits and Uncertainty</h2>
 
-\
+<p>Despite these efforts, significant gaps remain. Many individuals appear only briefly in the historical record, and some cannot be traced beyond a single document. Names are frequently misspelled or altered, and racial identification is inconsistent across sources. These limitations make it difficult to confirm identities with absolute certainty in every case.</p>
 
-\
+<p>Rather than attempting to resolve all ambiguities, this project acknowledges uncertainty as part of the historical process. The gaps in the archive are not simply obstacles, but evidence of how Chinese lives were recorded, categorized, and sometimes excluded from official narratives.</p>
+
+<h2>Building the Database</h2>
+
+<p>The individuals identified through this process were compiled into a working database that records key details such as name, birthplace, age, military branch, rank, service dates, and postwar life events when available. This database serves as the foundation for both the soldier profiles and the broader thematic analysis presented throughout the site.</p>
+
+<p>By combining quantitative organization with qualitative interpretation, the project moves between individual lives and larger historical questions about race, military service, migration, and belonging in the nineteenth-century United States.</p>
+
+<p>These methods can be seen in practice in the individual <a href="Webpages/soldier_profiles/robert-spicer.qmd">soldier profiles</a>, where fragmented records are brought together to reconstruct individual lives.</p>
