@@ -41,45 +41,51 @@ main, .content, .quarto-container, .page-columns {
   border-radius: 12px;
 }
 
-
 /* =========================
-   NAVBAR / HEADER (FIXED)
+   NAVBAR / HEADER
    ========================= */
 
-/* override Quarto + Bootstrap */
-.navbar,
-.navbar-dark,
-.navbar-expand-lg,
+#quarto-header {
+  background: rgba(120, 95, 70, 0.96) !important;
+  position: relative;
+  z-index: 1000;
+}
+
 #quarto-header .navbar {
-  background: rgba(120, 95, 70, 0.88) !important;
-  border-bottom: 1px solid rgba(80, 70, 55, 0.2);
+  background: rgba(120, 95, 70, 0.96) !important;
+  border-bottom: 1px solid rgba(80, 70, 55, 0.25);
   padding: 10px 20px;
 }
 
-/* remove black bar behind navbar if present */
-#quarto-header {
-  background: transparent !important;
-}
-
-/* navbar text */
-.navbar a,
-.navbar-brand,
-.navbar-nav .nav-link,
+#quarto-header .navbar-brand,
 #quarto-header .nav-link,
-#quarto-header .navbar-brand {
+#quarto-header .menu-text,
+#quarto-header .dropdown-toggle {
   color: #f5f1e8 !important;
   font-weight: 500;
 }
 
-/* hover effect */
-.navbar a:hover,
-.navbar-brand:hover,
-.navbar-nav .nav-link:hover,
-#quarto-header .nav-link:hover {
-  color: #7a5c36 !important;
+#quarto-header .navbar-brand:hover,
+#quarto-header .nav-link:hover,
+#quarto-header .menu-text:hover,
+#quarto-header .dropdown-toggle:hover {
+  color: #ffffff !important;
   text-decoration: underline;
 }
 
+#quarto-header .dropdown-menu {
+  background-color: rgba(120, 95, 60, 0.98) !important;
+  border: none;
+}
+
+#quarto-header .dropdown-item {
+  color: #f5f1e8 !important;
+}
+
+#quarto-header .dropdown-item:hover {
+  background-color: rgba(90, 70, 45, 0.98) !important;
+  color: #ffffff !important;
+}
 
 /* =========================
    TYPOGRAPHY
