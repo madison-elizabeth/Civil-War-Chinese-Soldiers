@@ -1,21 +1,44 @@
 /* css styles */
 
+/* FULL PAGE background */
 body {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  line-height: 1.6;
-  font-size: 18px;
+  background-image: linear-gradient(
+      rgba(248, 245, 238, 0.92),
+      rgba(248, 245, 238, 0.92)
+    ),
+    url("images/historical-map.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
+/* CONTENT container */
+main, .content, .quarto-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 12px;
+}
+
+/* headings */
 h1, h2, h3 {
   margin-top: 1.5em;
 }
 
+/* paragraphs */
 p {
   margin-bottom: 1em;
 }
 
+/* navigation */
 nav a {
   margin-right: 16px;
   text-decoration: none;
