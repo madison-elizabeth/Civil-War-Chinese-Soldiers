@@ -1,10 +1,22 @@
 /* css styles */
 
-/* FULL PAGE background */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Serif+4:wght@300;400;600&display=swap');
+
+/* =========================
+   BACKGROUND (historical image)
+   ========================= */
+
 body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #222;
+
+  /* darker background, more visible image */
   background-image: linear-gradient(
-      rgba(248, 245, 238, 0.92),
-      rgba(248, 245, 238, 0.92)
+      rgba(248, 245, 238, 0.80),
+      rgba(248, 245, 238, 0.80)
     ),
     url("images/historical-map.jpg");
 
@@ -12,34 +24,152 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
-  margin: 0;
-  padding: 0;
-  color: #222;
 }
 
-/* CONTENT container */
-main, .content, .quarto-container {
+
+/* =========================
+   CONTENT BOX (transparent panel)
+   ========================= */
+
+main, .content, .quarto-container, .page-columns {
   max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 25px;
 
-  background: rgba(255, 255, 255, 0.88);
+  /* more transparent than before */
+  background: rgba(255, 255, 255, 0.72);
   border-radius: 12px;
 }
 
-/* headings */
-h1, h2, h3 {
-  margin-top: 1.5em;
+
+/* =========================
+   NAVBAR / HEADER (FIXED)
+   ========================= */
+
+/* override Quarto + Bootstrap */
+.navbar,
+.navbar-dark,
+.navbar-expand-lg,
+#quarto-header .navbar {
+  background: rgba(120, 95, 70, 0.88) !important;
+  border-bottom: 1px solid rgba(80, 70, 55, 0.2);
+  padding: 10px 20px;
 }
 
-/* paragraphs */
+/* remove black bar behind navbar if present */
+#quarto-header {
+  background: transparent !important;
+}
+
+/* navbar text */
+.navbar a,
+.navbar-brand,
+.navbar-nav .nav-link,
+#quarto-header .nav-link,
+#quarto-header .navbar-brand {
+  color: #f5f1e8 !important;
+  font-weight: 500;
+}
+
+/* hover effect */
+.navbar a:hover,
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover,
+#quarto-header .nav-link:hover {
+  color: #7a5c36 !important;
+  text-decoration: underline;
+}
+
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1, h2, h3 {
+  margin-top: 1.5em;
+  font-weight: 600;
+}
+
 p {
   margin-bottom: 1em;
 }
 
-/* navigation */
-nav a {
-  margin-right: 16px;
-  text-decoration: none;
+
+/* =========================
+   LINKS (site-wide)
+   ========================= */
+
+a {
+  color: #5a4a2f;
+}
+
+a:hover {
+  color: #8a6b3f;
+}
+
+
+/* =========================
+   OPTIONAL: subtle polish
+   ========================= */
+
+/* smooth scrolling feel */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   DROPDOWN MENU FIX
+   ========================= */
+
+/* dropdown background */
+.dropdown-menu {
+  background-color: rgba(120, 95, 60, 0.95) !important;
+  border: none;
+}
+
+/* dropdown text */
+.dropdown-item {
+  color: #f5f1e8 !important;
+}
+
+/* hover effect */
+.dropdown-item:hover {
+  background-color: rgba(90, 70, 45, 0.95) !important;
+  color: #ffffff !important;
+}
+
+/* =========================
+   TYPOGRAPHY (ARCHIVAL STYLE)
+   ========================= */
+
+/* Body text */
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Slight hierarchy tuning */
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  margin-bottom: 1.2em;
+  max-width: 75ch;
 }
