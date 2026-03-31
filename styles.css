@@ -47,7 +47,10 @@ main, .content, .quarto-container, .page-columns {
 
 #quarto-header {
   background: rgba(120, 95, 70, 0.96) !important;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
 }
 
