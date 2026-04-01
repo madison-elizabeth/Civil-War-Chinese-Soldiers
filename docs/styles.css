@@ -182,3 +182,53 @@ p {
   margin-bottom: 1.2em;
   max-width: 75ch;
 }
+/* =========================
+   MOBILE INDEX / SEARCH ICON COLOR FIX
+   ========================= */
+
+/* top-right tool icons */
+.quarto-navbar-tools .bi,
+.quarto-navbar-tools svg,
+.quarto-navbar-tools svg path,
+.quarto-navbar-tools svg line,
+.quarto-navbar-tools svg circle {
+  color: #f5f1e8 !important;
+  fill: #f5f1e8 !important;
+  stroke: #f5f1e8 !important;
+}
+
+/* specifically target the search button and sidebar toggle */
+.quarto-search-button,
+.quarto-sidebar-toggle,
+.aa-DetachedSearchButton,
+.aa-DetachedSearchButtonIcon {
+  color: #f5f1e8 !important;
+  fill: #f5f1e8 !important;
+  stroke: #f5f1e8 !important;
+}
+
+/* if Quarto is using Bootstrap icon pseudo-elements */
+.quarto-navbar-tools .bi::before,
+.quarto-search-button::before,
+.quarto-sidebar-toggle::before {
+  color: #f5f1e8 !important;
+}
+.quarto-navbar-tools * {
+  color: #f5f1e8 !important;
+}
+
+.quarto-navbar-tools svg * {
+  fill: #f5f1e8 !important;
+  stroke: #f5f1e8 !important;
+}
+/* =========================
+   FORCE MOBILE HAMBURGER ICON TO LIGHT COLOR
+   ========================= */
+
+.navbar-toggler {
+  border-color: #f5f1e8 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28245,241,232,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
