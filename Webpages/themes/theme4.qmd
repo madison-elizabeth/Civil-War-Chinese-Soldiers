@@ -13,6 +13,8 @@ format: html
 
 <p>Such perceptions were not uniform, but they established a framework within which Chinese men were evaluated. Ideas about labor, gender roles, and cultural difference influenced how Chinese immigrants were viewed and how their actions were interpreted by broader society.</p>
 
+[![Political cartoon of 1886 called “Uncle Sam kicks out the Chinaman.”](images/BRI_APUSH_09_04_SamChina.jpg)](https://billofrightsinstitute.org/essays/the-chinese-exclusion-act/)
+
 <h2>Perception and Military Service</h2>
 
 <p>Military service placed Chinese men in a position that could both reinforce and challenge existing assumptions. On one hand, enlistment demonstrated participation in a national cause, potentially complicating narratives that framed Chinese immigrants as outsiders. On the other hand, service did not necessarily alter the racial frameworks through which they were viewed.</p>

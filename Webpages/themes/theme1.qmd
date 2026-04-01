@@ -39,7 +39,7 @@ format: html
 
 <ul>
 
-<li>Quigley, Paul. “Civil War Conscription and the International Boundaries of Citizenship.” Journal of the Civil War Era 4, no. 3 (2014): 373–97. </li>
+<li>Quigley, Paul. “Civil War Conscription and the International Boundaries of Citizenship.” Journal of the Civil War Era 4, no. 3 (2014): 373–97.</li>
 
 <li>Samito, Christian G. *Becoming American under Fire: Irish Americans, African Americans, and the Politics of Citizenship During the Civil War Era*. Ithaca: Cornell University Press, 2009.</li>
 

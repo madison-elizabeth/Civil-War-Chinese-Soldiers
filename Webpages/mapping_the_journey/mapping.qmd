@@ -26,12 +26,15 @@ library(htmltools)
 library(sf)
 library(purrr)
 library(tidygeocoder)
+library(htmlwidgets)
 ```
 
 ## About this project
 
 ::: {.callout-note appearance="simple"}
 This interactive map traces documented and approximate journey stops for soldiers and sailors in the dataset. It is designed as a public-facing research tool: readers can explore movement across enlistment points, transfers, receiving ships, discharge locations, and other recorded stops.
+
+This map is a work in progress, and as such, can be improved upon in many ways. Please also note that the lines connecting to each stop are not representative of the exact journey the individual might have taken, but rather a visualization of distance.
 :::
 
 This first version of the map emphasizes **documented locations** and **carefully standardized place names** rather than speculative routes. Lines connect each person's stops in order using `stop_order`.
@@ -45,7 +48,7 @@ This first version of the map emphasizes **documented locations** and **carefull
 
 ```{r}
 #| label: load-data
-stops_raw <- read_csv("data/journey_stops_mapping_ready.csv", show_col_types = FALSE)
+stops_raw <- read_csv("data/soldier_data_mapping_ready.csv", show_col_types = FALSE)
 
 stops <- stops_raw %>%
   mutate(
@@ -61,7 +64,7 @@ stops <- stops_raw %>%
 ```{r}
 #| label: geocode-cache
 #| eval: true
-geocode_cache_path <- "data/geocoded_places.csv"
+geocode_cache_path <- "data/place_coordinates.csv"
 
 if (file.exists(geocode_cache_path)) {
   geocode_cache <- read_csv(geocode_cache_path, show_col_types = FALSE)
@@ -117,7 +120,8 @@ stops_map <- stops_geo %>%
         tags$strong("Certainty: "), ..7, tags$br(),
         tags$strong("Notes: "), ifelse(is.na(..8), "", ..8)
       ))
-    )
+    ),
+    stop_group = paste0("Stops: ", name)         # CHANGED: group name for each soldier's stops
   )
 
 segments <- stops_map %>%
@@ -133,14 +137,17 @@ segments <- stops_map %>%
   filter(!is.na(next_lat), !is.na(next_lon))
 
 segments_sf <- pmap_dfr(
-  list(segments$lon, segments$lat, segments$next_lon, segments$next_lat,
-       segments$name, segments$service_branch, segments$place_standardized, segments$next_place),
+  list(
+    segments$lon, segments$lat, segments$next_lon, segments$next_lat,
+    segments$name, segments$service_branch, segments$place_standardized, segments$next_place
+  ),
   function(lon, lat, next_lon, next_lat, name, service_branch, place_standardized, next_place) {
     tibble(
       name = name,
       service_branch = service_branch,
       place_standardized = place_standardized,
       next_place = next_place,
+      line_group = paste0("Journey: ", name),   # CHANGED: group name for each soldier's journey line
       geometry = st_sfc(
         st_linestring(matrix(c(lon, lat, next_lon, next_lat), ncol = 2, byrow = TRUE)),
         crs = 4326
@@ -159,6 +166,7 @@ certainty_pal <- colorFactor(
   palette = c("exact" = "#1b9e77", "approximate" = "#d95f02", "unknown" = "#7570b3"),
   domain = unique(stops_map$certainty)
 )
+
 ```
 
 ## Explore the map
@@ -181,34 +189,51 @@ stops_map_jittered <- stops_map %>%
   ) %>%
   ungroup()
 
-leaflet() %>%
-  addProviderTiles(providers$CartoDB.Positron) %>%
-  addPolylines(
-    data = segments_sf,
-    color = ~branch_pal(service_branch),
-    weight = 2.5,
-    opacity = 0.7,
-    group = "Journeys",
-    popup = ~paste0(
-      "<b>", name, "</b><br>",
-      "From: ", place_standardized, "<br>",
-      "To: ", next_place
+# CHANGED: save all soldier names for the dropdown
+soldier_names <- sort(unique(stops_map_jittered$name))
+
+# CHANGED: start leaflet map as an object so we can attach dropdown JS after building it
+m <- leaflet() %>%
+  addProviderTiles(providers$CartoDB.Positron)
+
+# CHANGED: add journey lines soldier-by-soldier so each one can be selected in the dropdown
+for (soldier in soldier_names) {
+  m <- m %>%
+    addPolylines(
+      data = segments_sf %>% filter(name == soldier),
+      color = ~branch_pal(service_branch),
+      weight = 2.5,
+      opacity = 0.7,
+      group = paste0("Journey: ", soldier),
+      popup = ~paste0(
+        "<b>", name, "</b><br>",
+        "From: ", place_standardized, "<br>",
+        "To: ", next_place
+      )
     )
-  ) %>%
-  addCircleMarkers(
-    data = stops_map_jittered,
-    lng = ~lon_jitter,
-    lat = ~lat_jitter,
-    radius = 6,
-    stroke = TRUE,
-    weight = 1,
-    color = ~certainty_pal(certainty),
-    fillColor = ~certainty_pal(certainty),
-    fillOpacity = 0.9,
-    popup = ~popup,
-    group = "Stops",
-    label = ~paste(name, "-", stop_type)
-  ) %>%
+}
+
+# CHANGED: add stop points soldier-by-soldier so each one can be selected in the dropdown
+for (soldier in soldier_names) {
+  m <- m %>%
+    addCircleMarkers(
+      data = stops_map_jittered %>% filter(name == soldier),
+      lng = ~lon_jitter,
+      lat = ~lat_jitter,
+      radius = 6,
+      stroke = TRUE,
+      weight = 1,
+      color = ~certainty_pal(certainty),
+      fillColor = ~certainty_pal(certainty),
+      fillOpacity = 0.9,
+      popup = ~popup,
+      group = paste0("Stops: ", soldier),
+      label = ~paste(name, "-", stop_type)
+    )
+}
+
+# keep legends and regular layer control
+m <- m %>%
   addLegend(
     position = "bottomright",
     pal = branch_pal,
@@ -224,7 +249,69 @@ leaflet() %>%
     opacity = 1
   ) %>%
   addLayersControl(
-    overlayGroups = c("Journeys", "Stops"),
+    overlayGroups = c("Show all journeys", "Show all stops"),
     options = layersControlOptions(collapsed = FALSE)
   )
+
+# CHANGED: add dropdown menu with JavaScript
+m <- htmlwidgets::onRender(
+  m,
+  sprintf("
+function(el, x) {
+  var map = this;
+
+  // --- CHANGED: build dropdown control ---
+  var control = L.control({position: 'topright'});
+  control.onAdd = function(map) {
+    var div = L.DomUtil.create('div', 'info leaflet-bar');
+    div.style.background = 'white';
+    div.style.padding = '6px';
+    div.style.borderRadius = '4px';
+    div.style.boxShadow = '0 1px 5px rgba(0,0,0,0.4)';
+
+    div.innerHTML = `
+      <label for='soldier-select' style='font-weight:600; display:block; margin-bottom:4px;'>
+        Select a soldier
+      </label>
+      <select id='soldier-select' style='width:220px;'>
+        <option value='ALL'>All soldiers</option>
+        %s
+      </select>
+    `;
+
+    L.DomEvent.disableClickPropagation(div);
+    return div;
+  };
+  control.addTo(map);
+
+  function setVisibility(selected) {
+    var byGroup = map.layerManager._byGroup;
+
+    Object.keys(byGroup).forEach(function(groupName) {
+      if (groupName.startsWith('Journey: ') || groupName.startsWith('Stops: ')) {
+        var show = (selected === 'ALL') ||
+                   (groupName === 'Journey: ' + selected) ||
+                   (groupName === 'Stops: ' + selected);
+
+        Object.keys(byGroup[groupName]).forEach(function(id) {
+          var layer = byGroup[groupName][id];
+          if (show) {
+            map.addLayer(layer);
+          } else {
+            map.removeLayer(layer);
+          }
+        });
+      }
+    });
+  }
+
+  document.getElementById('soldier-select').addEventListener('change', function(e) {
+    setVisibility(e.target.value);
+  });
+}
+",
+  paste0("<option value=\\'", soldier_names, "\\'>", soldier_names, "</option>", collapse = "")
+))
+
+m
 ```

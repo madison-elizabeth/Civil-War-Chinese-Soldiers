@@ -3,12 +3,100 @@ title: "Sources"
 format: html
 ---
 
-## Explanation of Sources
+This project is built from a diverse archival base that documents the presence of Chinese individuals in the United States during the Civil War era. Because these individuals rarely appear in a single, cohesive record, the project draws on multiple source types to reconstruct their lives across military service, migration, and postwar experience.
 
-Reconstructing the lives of Chinese soldiers who served during the American Civil War required careful and intentional work across many different historical records. Unlike famous, well-documented generals and leaders, many of these men appear only briefly in the historical archive, and oftentimes with only their name. As clerks were unfamiliar with Chinese names, they could also be in several different records under different names. Their stories exist in scattered documents created by the military, the government, newspapers, and later researchers and archivists. This project attempts to piece those fragments together.
+------------------------------------------------------------------------
 
-Using military records, personal memoirs, and newspaper archives, this study attempts to reconstruct the experiences of Chinese soldiers and analyze their role in shaping military and racial policies. Sources such as military and government records (enlistment records, military reports, war correspondence and pension records) provide insight on identification and enrollment numbers and can be found in the National Archives and the U.S. War Department Reports as well as Fold3– a database made for searching for soldier records. Further, 19th-century newspapers, propaganda and recruitment materials, and documents describing political debates over the inclusion of Asian soldiers will provide a useful insight to track contemporary attitudes toward Asian military service.
+### Military and Naval Records
 
-Many soldiers in this project survive only in a single document like a muster roll, but leave no trace in later records. When working with marginalized communities, this archival silence is not unusual. Historical records often preserve the lives of some people more clearly than others. Language barriers, racial prejudice, poverty, and mobility made it more difficult, especially in this era, for Chinese migrants to appear consistently in official records. This project embraces those gaps, as even brief traces in the archive reveal that Chinese soldiers were participating in the Civil War. The list, and the information within, will continue to grow as new documents are discovered and cataloged. If you have additional information about any individuals featured in this project, please consider contacting the researcher. History is always a work in progress.
+The foundation of this project lies in **Union Army and Navy enlistment records**, which provide the most direct evidence of Chinese participation in the Civil War. These records include:
 
-Other Readings
+-   Enlistment dates and locations\
+-   Rank at entry and discharge\
+-   Ship assignments (for naval personnel)\
+-   Basic physical descriptions and demographic markers
+
+Naval records are particularly important, as many Chinese individuals served in the Union Navy, often in roles such as landsmen or stewards. These documents establish not only military service, but also patterns of mobility, labor, and incorporation into federal structures.
+
+------------------------------------------------------------------------
+
+### Pension Files
+
+**Pension records** are among the richest sources in this project. Unlike enlistment records, which are largely administrative, pension files often contain:
+
+-   Personal affidavits from veterans\
+-   Testimony from family members, shipmates, or community members\
+-   Medical evaluations and documentation of disability\
+-   Marriage and death records
+
+These files extend beyond wartime service, allowing the reconstruction of postwar lives, including family formation, economic conditions, and long-term health. At the same time, they reflect the bureaucratic requirements of the federal government, as applicants were required to provide evidence in forms that aligned with state expectations. For an example of what information a pension record can provide, see [John Hang](soldier_profiles/john-hang.qmd).
+
+------------------------------------------------------------------------
+
+### Census Records
+
+Federal census data is used to trace individuals across time, particularly in the decades following the war. These records provide:
+
+-   Occupations and economic status\
+-   Household composition\
+-   Residential patterns within port cities and coastal communities
+
+Census data helps situate Chinese veterans within broader social and geographic contexts, revealing how military service intersected with labor, migration, and community formation.
+
+------------------------------------------------------------------------
+
+### Ship Logs and Maritime Records
+
+Ship logs and naval documentation provide critical insight into the movements and labor structures of Chinese sailors. These sources include:
+
+-   Crew lists and ship assignments\
+-   Records of voyages and ports of call\
+-   Notes on discipline, labor, and onboard conditions
+
+Because many Chinese individuals entered military service through maritime labor networks, these records help connect Civil War service to broader transnational patterns of movement.
+
+------------------------------------------------------------------------
+
+### Newspapers and Public Discourse
+
+Nineteenth-century newspapers are used to contextualize how Chinese individuals were represented in public discourse during and after the Civil War. These sources include:
+
+-   Reports on military service and naval activity\
+-   Local coverage of Chinese communities\
+-   Editorials and commentary reflecting racial attitudes
+
+While Chinese soldiers are rarely the central focus of these articles, newspapers provide insight into the broader cultural environment in which they lived and served. To see how this discourse affected an individual's memory, see [Robert Spicer](soldier_profiles/robert-spicer.qmd).
+
+------------------------------------------------------------------------
+
+### Secondary Sources
+
+In addition to archival materials, this project draws on a body of historical scholarship that provides context for understanding race, migration, and citizenship in the nineteenth-century United States.
+
+Key works:
+
+Arielli, Nir, and Collins, Bruce, eds. *Transnational Soldiers: Foreign Military Enlistment in the Modern Era*. Basingstoke, UK: Palgrave Macmillan UK, 2012. 
+
+Bailey, Anne J. *Invisible Southerners : Ethnicity in the Civil War.* Athens: University of Georgia Press, 2006.
+
+Black, Jeremy. *War in the 19th Century, 1800-1914.* Cambridge: Polity, 2009.
+
+Blight, David W, and American Council of Learned Societies. *Race and Reunion the Civil War in American Memory*. Cambridge, Mass: Belknap Press of Harvard University Press, 2003.
+
+Grant, Susan-Mary “When Is a Nation not a Nation? The Crisis of American Nationality in the Mid-Nineteenth Century,” Nations and Nationalism 2, no. 1 (1996): 105–29
+
+Lee, Erika. *At America’s Gates: Chinese Immigration during the Exclusion Era*. Chapel Hill, NC: University of North Carolina Press, 2003.
+
+Lew-Williams, Beth. *The Chinese Must Go: Chinese, Exclusion, and the Making of the Alien in America*. Cambridge, MA: Harvard University Press, 2018.
+
+Salyer, Lucy E. *Laws Harsh as Tigers: Chinese Immigrants and the Shaping of Modern Immigration Law*. Chapel Hill, NC: University of North Carolina Press, 1995.
+
+These works provide historical context and help situate the project within broader scholarly conversations, but the core of the analysis remains grounded in the archival record.
+
+------------------------------------------------------------------------
+
+### Bringing the Sources Together
+
+No single source fully captures the experiences of Chinese Civil War participants. Instead, this project relies on the **intersection of multiple record types** to reconstruct individual lives. Military records establish service, pension files provide narrative depth, census data traces continuity, and newspapers reveal the broader cultural context.
+
+Taken together, these sources allow for a more complete account of individuals who are otherwise only partially visible in the historical record.
