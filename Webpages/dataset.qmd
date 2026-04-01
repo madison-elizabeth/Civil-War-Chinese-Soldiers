@@ -1,0 +1,64 @@
+---
+title: "The Dataset"
+format: html
+---
+
+## Database
+
+This project includes a curated database of Chinese individuals connected to the American Civil War. Developed alongside the research and interpretive components of the site, the dataset brings together information drawn from a wide range of archival sources in order to document military service, movement, labor, and postwar life. For more about how the researcher's methodology, see [Methodology](methodology.qmd)
+
+---
+
+### Accessing the Dataset
+
+- [Download the full dataset (CSV)](mapping_the_journey/data/chinese_soldiers_cw.csv)  
+- [Download the full dataset (Excel)](mapping_the_journey/data/chinese_soldiers_cw.xlsx)  
+
+The dataset is provided as a public resource for research, teaching, and further exploration.
+
+---
+
+### Scope and Structure
+
+The database includes individuals identified through enlistment records, pension files, naval documents, census data, and contemporary newspapers. Each entry represents a synthesis of available evidence rather than a single archival record.
+
+Fields in the dataset may include:
+
+- Name  
+- Alternate names and variant spellings  
+- Birthplace  
+- Service branch (Army or Navy)  
+- Rank at enlistment and discharge  
+- Ship or regiment  
+- Enlistment and discharge dates  
+- Occupation  
+- Residence  
+- Pension status  
+- Notes  
+- Source references  
+
+Where possible, entries trace individuals across multiple stages of life, from military service to postwar settlement. In many cases, however, the archival record remains incomplete.
+
+---
+
+### Limits of the Archive
+
+This database is not a complete record of Chinese participation in the Civil War. Instead, it represents what can be recovered from an archive that was never designed to systematically document these individuals.
+
+Some entries are more fully documented than others, while some remain partial or provisional. These uneven records are not simply gaps in data—they reflect broader historical processes that shaped who was recorded, how they were described, and what forms of evidence were preserved.
+
+---
+
+### Use and Citation
+
+This dataset is shared as part of an ongoing research project and is intended for public use. It may be used for scholarly research, teaching, and public history work.
+
+If you use this dataset, please cite the project and include the date of access, as the database may be updated over time.
+
+---
+
+### Ongoing Work
+
+The database is a living component of this project. As new records are identified and existing entries are refined, the dataset will continue to evolve. Future updates may include additional individuals, expanded biographical detail, and further integration with the site’s mapping and interpretive features.
+
+By making this data public, this project invites further research and engagement, extending beyond the limits of this site and contributing to a broader effort to document and understand Chinese presence in the Civil War era.

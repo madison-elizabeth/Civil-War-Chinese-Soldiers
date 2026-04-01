@@ -26,6 +26,8 @@ website:
             text: John Comfort
       - href: Webpages/mapping_the_journey/mapping.qmd
         text: Mapping the Journey
+      - href: Webpages/dataset.qmd
+        text: The Dataset
       - href: Webpages/about.qmd
         text: About
       - href: Webpages/methodology.qmd
