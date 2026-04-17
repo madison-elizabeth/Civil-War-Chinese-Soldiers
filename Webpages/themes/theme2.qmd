@@ -15,11 +15,13 @@ format: html
 
 <h2>Military Records as Sites of Recognition</h2>
 
-<p>Military service created new opportunities for Chinese men to enter these bureaucratic systems. Enlistment records required the documentation of key details such as name, age, place of birth, and occupation. Service records and muster rolls extended this documentation across time, while pension files could preserve information decades after the war.</p>
+<p>
 
-[![Muster Roll for Antonio Dardelle](images/Antonio_Dardelle_CMSR_005.jpg){width="346"}](https://catalog.archives.gov/id/146919982?objectPage=5)
+Military service created new opportunities for Chinese men to enter these bureaucratic systems. Enlistment records required the documentation of key details such as name, age, place of birth, and occupation. Service records and muster rolls extended this documentation across time, while pension files could preserve information decades after the war.`</p`{=html}
 
-[![John Wylee Renezvous Report, 1862](images/Page%201.jpg)](https://www.fold3.com/image/310113356/wylee-john-page-1-us-rendezvous-reports-index-civil-war-1861-1865)
+[![Muster Roll for Antonio Dardelle, National Archives and Records Administration (Washington D.C.), National Archives Catalog, \<https://catalog.archives.gov/id/146919982?objectPage=5\>.](images/Antonio_Dardelle_CMSR_005.jpg){width="346"}](https://catalog.archives.gov/id/146919982?objectPage=5)
+
+[![John Wylee Rendezvous Report, 1862. U.S. National Archives and Records Administration. “Wylee, John.” Index to Rendezvous Reports, Civil War, 1861–1865. Accessed via Fold3. \<https://www.fold3.com/image/310113356.\>](images/Page%201.jpg)](https://www.fold3.com/image/310113356/wylee-john-page-1-us-rendezvous-reports-index-civil-war-1861-1865)
 
 <p>These records helped produce an identity. By assigning names, categories, and descriptors to individuals, military documentation contributed to the process of making Chinese men legible to the state. In this way, the military functioned not only as a site of labor and service, but also as a site of recognition and classification.</p>
 
@@ -31,7 +33,7 @@ format: html
 
 <p>Despite this increased visibility, recognition within bureaucratic systems did not guarantee broader social or legal inclusion. Chinese men who served in the military were still subject to exclusionary laws, racial discrimination, and shifting definitions of citizenship. Being recorded did not necessarily mean being accepted.</p>
 
-[!["Kwong Lee was shot five times in the defense of the country of which he was not yet a citizen." The San Francisco Call, July 23, 1909](images/Screenshot%202026-04-01%20at%205.26.02%20PM.jpg)](https://www.loc.gov/resource/sn85066387/1909-07-23/ed-1/?sp=3&q=Kwong+Lee&st=pdf&r=-0.263,-0.076,1.527,1.527,0)
+[!["Kwong Lee was shot five times in the defense of the country of which he was not yet a citizen." The San Francisco Call, July 23, 1909.](images/Screenshot%202026-04-01%20at%205.26.02%20PM.jpg)](https://www.loc.gov/resource/sn85066387/1909-07-23/ed-1/?sp=3&q=Kwong+Lee&st=pdf&r=-0.263,-0.076,1.527,1.527,0)
 
 <p>At the same time, the existence of these records complicates narratives of complete exclusion. The presence of Chinese men in military and administrative documents reveals moments in which they were acknowledged, categorized, and incorporated—however imperfectly—into the structures of the state.</p>
 

@@ -18,18 +18,43 @@ The foundation of this project lies in **Union Army and Navy enlistment records*
 
 Naval records are particularly important, as many Chinese individuals served in the Union Navy, often in roles such as landsmen or stewards. These documents establish not only military service, but also patterns of mobility, labor, and incorporation into federal structures.
 
-------------------------------------------------------------------------
-
-### Pension Files
+## Pension Files
 
 **Pension records** are among the richest sources in this project. Unlike enlistment records, which are largely administrative, pension files often contain:
 
--   Personal affidavits from veterans\
--   Testimony from family members, shipmates, or community members\
--   Medical evaluations and documentation of disability\
+-   Personal affidavits from veterans
+-   Testimony from family members, shipmates, or community members
+-   Medical evaluations and documentation of disability
 -   Marriage and death records
 
-These files extend beyond wartime service, allowing the reconstruction of postwar lives, including family formation, economic conditions, and long-term health. At the same time, they reflect the bureaucratic requirements of the federal government, as applicants were required to provide evidence in forms that aligned with state expectations. For an example of what information a pension record can provide, see [John Hang](soldier_profiles/john-hang.qmd).
+These files extend beyond wartime service, allowing the reconstruction of postwar lives, including family formation, economic conditions, and long-term health. At the same time, they reflect the bureaucratic requirements of the federal government, as applicants were required to provide evidence in forms that aligned with state expectations.
+
+### Example: Antonio Dardell Pension File (27th Connecticut Infantry)
+
+The pension file of Antonio Dardell illustrates the range of evidence pension records can contain. Dardell, who served in Company A of the 27th Connecticut Infantry, applied for a pension decades after his Civil War service. His file includes official identification forms, a formal declaration for pension, and supporting correspondence and personal testimony, demonstrating both the depth of personal information preserved in these records and the evidentiary burden placed on veterans seeking recognition.
+
+::: {.callout-note appearance="simple"}
+**Why this source matters**
+
+These pages show how pension files bridge bureaucratic recordkeeping and personal testimony. Together, they document service, formal claims-making, and the human witnesses required to support recognition.
+:::
+
+To explore the full range of documents contained in this record, view the complete pension file here:\
+[Full Pension File (PDF)](../documents/Antonio_Dardell_Pension.pdf)
+
+### Selected Pages from the Pension File
+
+![Claim sheet for Antonio Dardell’s pension application, identifying his Civil War service and file number. *Pension file of Antonio Dardell, Company A, 27th Connecticut Infantry, National Archives.*](../images/Antonio_Dardell_Pension_002.jpg)
+
+<br>
+
+![Declaration for pension, including personal details and formal application under federal law. *Pension file of Antonio Dardell, Company A, 27th Connecticut Infantry, National Archives.*](../images/Antonio_Dardell_Pension_011.jpg)
+
+<br>
+
+![Pension Bureau correspondence documenting personal and family information provided in support of the claim. *Pension file of Antonio Dardell, Company A, 27th Connecticut Infantry, National Archives.*](../images/Antonio_Dardell_Pension_031.jpg)
+
+<br> <small>For another example of what pension records can reveal, see [John Hang](soldier_profiles/john-hang.qmd).</small>
 
 ------------------------------------------------------------------------
 

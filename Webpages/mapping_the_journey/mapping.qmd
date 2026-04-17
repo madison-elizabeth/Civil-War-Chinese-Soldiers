@@ -34,7 +34,7 @@ library(htmlwidgets)
 ::: {.callout-note appearance="simple"}
 This interactive map traces documented and approximate journey stops for soldiers and sailors in the dataset. It is designed as a public-facing research tool: readers can explore movement across enlistment points, transfers, receiving ships, discharge locations, and other recorded stops.
 
-This map is a work in progress, and as such, can be improved upon in many ways. Please also note that the lines connecting to each stop are not representative of the exact journey the individual might have taken, but rather a visualization of distance.
+Please note that the lines connecting to each stop are not representative of the exact journey the individual might have taken, but rather a visualization of distance.
 :::
 
 This first version of the map emphasizes **documented locations** and **carefully standardized place names** rather than speculative routes. Lines connect each person's stops in order using `stop_order`.

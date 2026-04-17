@@ -7,7 +7,9 @@ format: html
 
 <h2>Service and Exclusion</h2>
 
-<p>Chinese immigrants in the mid-nineteenth century occupied an uncertain legal and social position in the United States. They were present within the nation, but not fully incorporated into its political or civic framework. Military service therefore placed these men in a contradictory position: they contributed to the preservation of the Union while remaining outside the boundaries of formal citizenship.</p>
+<p>Chinese migrants were present in the United States in small but growing numbers prior to the Civil War, mostly along the West Coast but also in eastern port cities such as New York and Boston. By the 1860s, a limited number of Chinese men had entered maritime and labor networks that brought them into contact with Union military structures. Although their numbers remained small—scholars estimate between 150 and 300—their presence complicates assumptions about Chinese exclusion as a purely postwar phenomenon. In the decades following the war, however, these individuals and others like them became subject to increasingly restrictive immigration policies, culminating in the Chinese Exclusion Act of 1882.</p>
+
+<p>These individuals also occupied an uncertain legal and social position in the United States. They were present within the nation, but not fully incorporated into its political or civic framework. Military service therefore placed these men in a contradictory position: they contributed to the preservation of the Union while remaining outside the boundaries of formal citizenship.</p>
 
 <p>This contradiction reflects broader tensions in Civil War-era America. In April 1862, the Confederacy implemented the first national conscription law, while the United States federal government followed with the Enrollment Act of 1863. These developments expanded the relationship between military service and citizenship, even as that relationship remained uneven and exclusionary.</p>
 
@@ -21,7 +23,7 @@ format: html
 
 <p>The significance of military service becomes clearer when viewed through individual lives. The experience of <a href="../soldier_profiles/robert-spicer.html">Robert Spicer</a>, for example, demonstrates how naval service could form part of a longer trajectory that included migration, labor, and postwar life in the United States. His service connected him to institutions that would later shape his claims to recognition and memory.</p>
 
-<p>Similarly, the record of <a href="../soldier_profiles/john-ah-hang.html">John (Ah) Hang</a> illustrates how service generated documentation that extended beyond the war itself. Pension files, interviews, and other records created a paper trail that allows historians to reconstruct his life in greater detail than might otherwise be possible.</p>
+<p>Similarly, the record of <a href="../soldier_profiles/john-hang.html">John (Ah) Hang</a> illustrates how service generated documentation that extended beyond the war itself. Pension files, interviews, and other records created a paper trail that allows historians to reconstruct his life in greater detail than might otherwise be possible.</p>
 
 <p>These individual cases reveal broader patterns. Military service did not erase racial exclusion, but it created conditions under which Chinese men could assert presence, build records, and participate—however unevenly—in the national story of the Civil War.</p>
 
@@ -39,7 +41,11 @@ format: html
 
 <ul>
 
+<li>He, Angela. "'Mulatto, Indian, Or What': The Racialization of Chinese Soldiers and The American Civil War." The Gettysburg College Journal of the Civil War Era, 2019</li>
+
 <li>Quigley, Paul. “Civil War Conscription and the International Boundaries of Citizenship.” Journal of the Civil War Era 4, no. 3 (2014): 373–97.</li>
+
+<li>Ruthanne Lum McCunn, *Chinese in the Civil War: 10 Who Served* (Ruthanne Lum McCunn: 1995)</li>
 
 <li>Samito, Christian G. *Becoming American under Fire: Irish Americans, African Americans, and the Politics of Citizenship During the Civil War Era*. Ithaca: Cornell University Press, 2009.</li>
 

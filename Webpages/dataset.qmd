@@ -3,20 +3,24 @@ title: "The Dataset"
 format: html
 ---
 
-## Database
+## The Dataset
 
-This project includes a curated database of Chinese individuals connected to the American Civil War. Developed alongside the research and interpretive components of the site, the dataset brings together information drawn from a wide range of archival sources in order to document military service, movement, labor, and postwar life. For more about how the researcher's methodology, see [Methodology](methodology.qmd)
+This project compiles a dataset of Chinese soldiers and sailors who served during the Civil War, drawing on military enlistment records, pension files, census data, and newspaper sources.
 
----
+Previous scholarship has identified approximately 58 Chinese American soldiers and sailors who served during the Civil War. This project builds on that foundation by identifying additional individuals through expanded archival research, including pension files and federal census records, and bringing that number to 80.
+
+Developed alongside the research and interpretive components of the site, the dataset brings together information drawn from a wide range of archival sources in order to document military service, movement, labor, and postwar life. For more about the researcher's methodology, see [Methodology](methodology.qmd).
+
+------------------------------------------------------------------------
 
 ### Accessing the Dataset
 
-- [Download the full dataset (CSV)](mapping_the_journey/data/chinese_soldiers_cw.csv)  
-- [Download the full dataset (Excel)](mapping_the_journey/data/chinese_soldiers_cw.xlsx)  
+-   [Download the full dataset (CSV)](mapping_the_journey/data/chinese_soldiers_cw.csv)\
+-   [Download the full dataset (Excel)](mapping_the_journey/data/chinese_soldiers_cw.xlsx)
 
 The dataset is provided as a public resource for research, teaching, and further exploration.
 
----
+------------------------------------------------------------------------
 
 ### Scope and Structure
 
@@ -24,22 +28,22 @@ The database includes individuals identified through enlistment records, pension
 
 Fields in the dataset may include:
 
-- Name  
-- Alternate names and variant spellings  
-- Birthplace  
-- Service branch (Army or Navy)  
-- Rank at enlistment and discharge  
-- Ship or regiment  
-- Enlistment and discharge dates  
-- Occupation  
-- Residence  
-- Pension status  
-- Notes  
-- Source references  
+-   Name\
+-   Alternate names and variant spellings\
+-   Birthplace\
+-   Service branch (Army or Navy)\
+-   Rank at enlistment and discharge\
+-   Ship or regiment\
+-   Enlistment and discharge dates\
+-   Occupation\
+-   Residence\
+-   Pension status\
+-   Notes\
+-   Source references
 
 Where possible, entries trace individuals across multiple stages of life, from military service to postwar settlement. In many cases, however, the archival record remains incomplete.
 
----
+------------------------------------------------------------------------
 
 ### Limits of the Archive
 
@@ -47,15 +51,17 @@ This database is not a complete record of Chinese participation in the Civil War
 
 Some entries are more fully documented than others, while some remain partial or provisional. These uneven records are not simply gaps in data—they reflect broader historical processes that shaped who was recorded, how they were described, and what forms of evidence were preserved.
 
----
+------------------------------------------------------------------------
 
 ### Use and Citation
 
 This dataset is shared as part of an ongoing research project and is intended for public use. It may be used for scholarly research, teaching, and public history work.
 
-If you use this dataset, please cite the project and include the date of access, as the database may be updated over time.
+If you use this dataset, please cite the project and include the date of access, as the database may be updated over time. To cite:
 
----
+Smith, Madison. "Chinese Soldiers and Sailors in the American Civil War." Version 1.0. Civil War Chinese Soldiers Project, 2026. Accessed \[date\]. <https://madison-elizabeth.github.io/Civil-War-Chinese-Soldiers/>
+
+------------------------------------------------------------------------
 
 ### Ongoing Work
 
