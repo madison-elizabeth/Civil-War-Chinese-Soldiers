@@ -58,7 +58,7 @@ To explore the full range of documents contained in this record, view the comple
 
 ------------------------------------------------------------------------
 
-### Census Records
+## Census Records
 
 Federal census data is used to trace individuals across time, particularly in the decades following the war. These records provide:
 
@@ -66,11 +66,13 @@ Federal census data is used to trace individuals across time, particularly in th
 -   Household composition\
 -   Residential patterns within port cities and coastal communities
 
+![Robert, and wife Alice, Spicer listed on the 1880 census **U.S. Census Bureau, 1880 United States Federal Census, New London County, Connecticut, entry for Robert Spicer, digital image, Ancestry*.*](../images/rs_census.jpg)
+
 Census data helps situate Chinese veterans within broader social and geographic contexts, revealing how military service intersected with labor, migration, and community formation.
 
 ------------------------------------------------------------------------
 
-### Ship Logs and Maritime Records
+## Ship Logs and Maritime Records
 
 Ship logs and naval documentation provide critical insight into the movements and labor structures of Chinese sailors. These sources include:
 
@@ -82,7 +84,7 @@ Because many Chinese individuals entered military service through maritime labor
 
 ------------------------------------------------------------------------
 
-### Newspapers and Public Discourse
+## Newspapers and Public Discourse
 
 Nineteenth-century newspapers are used to contextualize how Chinese individuals were represented in public discourse during and after the Civil War. These sources include:
 
@@ -94,7 +96,7 @@ While Chinese soldiers are rarely the central focus of these articles, newspaper
 
 ------------------------------------------------------------------------
 
-### Secondary Sources
+## Secondary Sources
 
 In addition to archival materials, this project draws on a body of historical scholarship that provides context for understanding race, migration, and citizenship in the nineteenth-century United States.
 
@@ -120,7 +122,7 @@ These works provide historical context and help situate the project within broad
 
 ------------------------------------------------------------------------
 
-### Bringing the Sources Together
+## Bringing the Sources Together
 
 No single source fully captures the experiences of Chinese Civil War participants. Instead, this project relies on the **intersection of multiple record types** to reconstruct individual lives. Military records establish service, pension files provide narrative depth, census data traces continuity, and newspapers reveal the broader cultural context.
 
